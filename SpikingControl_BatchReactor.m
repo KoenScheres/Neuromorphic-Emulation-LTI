@@ -1,3 +1,10 @@
+%% Emulate Static Output Feedback controller using a Neuromorphic Control architecture
+% Date: January 26, 2026
+% Author: K.J.A. Scheres - Eindhoven University of Technology
+% Contact: k.j.a.scheres@tue.nl
+%
+% See the LICENSE file in the project root for full license information.
+
 clear all; close all;
 
 set(0,'defaultFigureWindowStyle','docked');
