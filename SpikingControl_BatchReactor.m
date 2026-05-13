@@ -93,9 +93,9 @@ E1 = max(vecnorm(interp1(T1,X1(:,ix),T_CL)'-X_CL'));
 E2 = max(vecnorm(interp1(T2,X2(:,ix),T_CL)'-X_CL'));
 E3 = max(vecnorm(interp1(T3,X3(:,ix),T_CL)'-X_CL'));
 
-UB1 = gamma*vecnorm(2*spike_amplitude*ones(size(spike_amplitude,2),1));
-UB2 = gamma*vecnorm(2*spike_amplitude./4*ones(size(spike_amplitude,2),1));
-UB3 = gamma*vecnorm(2*spike_amplitude./15*ones(size(spike_amplitude,2),1));
+UB1 = gamma*vecnorm(spike_amplitude*ones(size(spike_amplitude,2),1));
+UB2 = gamma*vecnorm(spike_amplitude./4*ones(size(spike_amplitude,2),1));
+UB3 = gamma*vecnorm(spike_amplitude./15*ones(size(spike_amplitude,2),1));
 
 fprintf('\n\n');
 disp(table([total_spikes_1;total_spikes_2;total_spikes_3],[UB1;UB2;UB3],[E1;E2;E3],'VariableNames',{'Total # spikes','Guaranteed bound','Simulated bound'},'RowNames',{'I','II','III'}));
