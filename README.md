@@ -11,7 +11,7 @@ It includes the code to generate the figures and data of the simulation examples
 
 - **Elena Petri** – Eindhoven University of Technology
 
-- **Koen J.A. Scheres** – Eindhoven University of Technology
+- **Koen J.A. Scheres** – STADIUS, ESAT, KU Leuven
 
 - **Erik Steur** – Eindhoven University of Technology
 
